@@ -2,12 +2,13 @@
     box-sizing: border-box;
 }
 
-body {
+body, html {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     color: rgba(0, 0, 0, .87);
-    line-height: 1.8;
+    line-height: 1. 6;
     margin: 0;
+    font-weight: 500;
 }
 
 .topbar {
@@ -18,11 +19,11 @@ body {
     right: 0;
     width: 100%;
     padding: 31px 87px;
+    z-index: 3;
 }
 
 .topbar nav {
     float: left;
-
 }
 
 .topbar nav a {
@@ -47,4 +48,124 @@ body {
 
 .social a:hover {
     opacity: 1;
+}
+
+.baniere {
+    height: 427px;
+    background: no-repeat center center / cover url(img/header.jpg);
+}
+
+.content {
+    display: flex;
+}
+
+.main {
+    width: calc(100% - 375px);
+    background-color:#fff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .5);
+    z-index: 2;
+    position: relative;
+}
+
+.sidebar {
+    width: 375px;
+    background-color: #f8f8f8;
+    padding: 40px;
+    font-size: 17px;
+    z-index: 1;
+    position: relative;
+}
+
+.sidebar_title {
+  font-size: 30px;
+  color: #000;
+  margin: 15px 0;
+}
+
+.sidebar_title:first-child {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar a {
+    color: #9f9f9f;
+    text-decoration: none;
+}
+
+.sidebar li {
+    padding: 6px 0;
+}
+
+.sidebar li:first-child {
+    padding-top: 0;
+}
+
+.sidebar li:last-child {
+    padding-bottom: 0;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+.article {
+    margin: 50px 0;
+    position: relative;
+    padding-left: 333px;
+    min-height: 203px;
+}
+
+.article a {
+    color: inherit ;
+    text-decoration: none;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
+.sidebar hr {
+    border: none;
+    background: #c4c4c4;
+    height: 1px;
+    margin: 50px;
+}
+
+.article_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    margin-right: 25px;
+}
+
+.article_img img {
+    width: 100%;
+    height: auto;
+}
+
+.article_date {
+    font-weight: 300px;
+    color: rgba(0, 0, 0, .6);
+    margin-bottom: 5px;
+}
+
+.article_title {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-family: "Cardo", serif;
+    margin: 0 0 15px 0;
+}
+
+.footer {
+    clear: both;
 }
